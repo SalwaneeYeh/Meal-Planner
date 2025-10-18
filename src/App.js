@@ -1,23 +1,12 @@
-import logo from './logo.svg';
+import React from 'react';
+import MealManager from './components/MealManager';
 import './App.css';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className="App" style={{maxWidth:900, margin:'0 auto', padding:20}}>
+      <h1>Meal Planner</h1>
+      <MealManager />
     </div>
   );
 }
